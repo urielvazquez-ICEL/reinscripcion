@@ -8,14 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Fondo Frutiger Aero con cortes diagonales limpios (Estilo Vista/Aero) */
+        /* Fondo Frutiger Aero Animado */
         body { 
             font-family: 'Inter', sans-serif; 
-            background-color: #1e88e5; /* Azul rey base */
+            background-color: #1e88e5; 
             background-image: 
                 linear-gradient(165deg, #64b5f6 0%, #42a5f5 45%, transparent 45.1%),
                 linear-gradient(172deg, #2196f3 0%, #1976d2 55%, transparent 55.1%);
-            background-attachment: fixed;
+            background-size: 300% 300%;
+            animation: moverFondo 15s ease-in-out infinite alternate;
+        }
+
+        @keyframes moverFondo {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         /* Estilos Frutiger Aero (Skeuomorfismo) */
@@ -90,7 +97,7 @@
             border: 1px solid rgba(255,255,255,0.8);
         }
 
-        /* Animaciones */
+        /* Animaciones para las tarjetas y textos */
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -461,8 +468,9 @@
                     ¿Tienes problemas para descargar los archivos? <br class="sm:hidden">
                     Comunícate a Sistemas.
                 </p>
-                <a href="mailto:urielvazquez@icel.edu.mx" class="inline-flex items-center gap-2 aero-btn-blue px-6 py-2.5 rounded-full text-sm font-bold shadow-lg transition-all transform hover:-translate-y-1 hover:shadow-xl">
-                    <img src="https://i.postimg.cc/VkWKfghp/imagen-2026-08-08-112314393.png" alt="MSN Messenger" class="w-6 h-6 object-contain drop-shadow-md">
+                <!-- Agregué tu link a facebook messenger y cambié el icono -->
+                <a href="https://m.me/TU_USUARIO_AQUI" target="_blank" class="inline-flex items-center gap-2 aero-btn-blue px-6 py-2.5 rounded-full text-sm font-bold shadow-lg transition-all transform hover:-translate-y-1 hover:shadow-xl">
+                    <img src="https://i.postimg.cc/mDbgP5G3/image-4fc4be.png" alt="MSN Messenger" class="w-6 h-6 object-contain drop-shadow-md">
                     urielvazquez@icel.edu.mx
                 </a>
             </div>
