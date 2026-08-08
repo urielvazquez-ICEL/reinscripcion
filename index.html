@@ -8,39 +8,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Fondo Frutiger Aero con Olas Animadas */
+        /* Fondo Frutiger Aero con cortes diagonales limpios (Estilo Vista/Aero) */
         body { 
             font-family: 'Inter', sans-serif; 
-            background-color: #87ceeb; 
+            background-color: #1e88e5; /* Azul rey base */
             background-image: 
-                radial-gradient(circle at 15% 30%, rgba(255, 255, 255, 0.4) 0%, transparent 20%),
-                radial-gradient(circle at 85% 60%, rgba(255, 255, 255, 0.3) 0%, transparent 25%),
-                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%231a237e' fill-opacity='0.25' d='M0,128L48,138.7C96,149,192,171,288,181.3C384,192,480,192,576,170.7C672,149,768,107,864,117.3C960,128,1056,192,1152,213.3C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E"),
-                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%230ea5e9' fill-opacity='0.5' d='M0,224L48,213.3C96,203,192,181,288,186.7C384,192,480,224,576,213.3C672,203,768,149,864,138.7C960,128,1056,160,1152,186.7C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E"),
-                linear-gradient(to bottom, #e0f2fe 0%, #38bdf8 100%);
-            background-size: cover, cover, 1440px 320px, 1440px 320px, cover;
-            background-position: center, center, 0px bottom, 0px bottom, center;
-            background-repeat: no-repeat, no-repeat, repeat-x, repeat-x, no-repeat;
-            background-attachment: fixed, fixed, fixed, fixed, fixed;
-            animation: moverOlas 15s linear infinite;
-        }
-
-        /* Animación para que las olas fluyan infinitamente */
-        @keyframes moverOlas {
-            0% { background-position: center, center, 0px bottom, 0px bottom, center; }
-            100% { background-position: center, center, 1440px bottom, -1440px bottom, center; }
+                linear-gradient(165deg, #64b5f6 0%, #42a5f5 45%, transparent 45.1%),
+                linear-gradient(172deg, #2196f3 0%, #1976d2 55%, transparent 55.1%);
+            background-attachment: fixed;
         }
 
         /* Estilos Frutiger Aero (Skeuomorfismo) */
         .aero-glass {
-            background: linear-gradient(135deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.5) 100%);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.6) 100%);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
             border-top: 2px solid rgba(255, 255, 255, 0.9);
             border-left: 1px solid rgba(255, 255, 255, 0.6);
             border-right: 1px solid rgba(255, 255, 255, 0.3);
             border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 15px 35px rgba(26, 35, 126, 0.2), inset 0 0 20px rgba(255,255,255,0.5);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2), inset 0 0 20px rgba(255,255,255,0.5);
         }
         
         .aero-header {
@@ -474,8 +461,9 @@
                     ¿Tienes problemas para descargar los archivos? <br class="sm:hidden">
                     Comunícate a Sistemas.
                 </p>
-                <a href="https://m.me/TU_USUARIO_AQUI" target="_blank" class="inline-flex items-center gap-2 aero-btn-blue px-6 py-2.5 rounded-full text-sm font-bold shadow-lg transition-all transform hover:-translate-y-1 hover:shadow-xl">
-                    <i class="fa-brands fa-facebook-messenger text-lg"></i> urielvazquez@icel.edu.mx
+                <a href="mailto:urielvazquez@icel.edu.mx" class="inline-flex items-center gap-2 aero-btn-blue px-6 py-2.5 rounded-full text-sm font-bold shadow-lg transition-all transform hover:-translate-y-1 hover:shadow-xl">
+                    <img src="https://i.postimg.cc/VkWKfghp/imagen-2026-08-08-112314393.png" alt="MSN Messenger" class="w-6 h-6 object-contain drop-shadow-md">
+                    urielvazquez@icel.edu.mx
                 </a>
             </div>
         </div>
